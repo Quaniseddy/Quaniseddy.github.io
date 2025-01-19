@@ -137,6 +137,11 @@
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
+        <div class="work_experience">
+          <h2>My work Experience</h2>
+          <h1>• NAB</h1>
+          <p>Summer Intern<br />Nov 2024 - Feb 2025</p>
+        </div>
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
@@ -281,7 +286,7 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Uni Assignment System Implementation
+              Assignment Submition & Grading System
             </h2>
             <div class="btn-container">
               <button
@@ -291,11 +296,31 @@
                 GitHub
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linkedin.com/';"
+                class="btn btn-color-2 project-btn show-modal"
+                data-modal="modal1"
               >
                 Details
               </button>
+
+              <div class="modal hidden" id="modal1">
+                <div class="modal-inner">
+                  <h2>A simulation of UNSW assignment system</h2>
+                  <p>
+                    <br />• Written in POSIX-compatible Shell, this project aims
+                    to duplicate the assignment submit/grade system at UNSW.
+                    Provides operational specification by exact reference
+                    implementation towards UNSW system behavior. <br />• Run
+                    with dash, in /bin/dash. Provide functions to both student
+                    end and staff end, including submit, status, fetch and auto
+                    test for student use, adding, removal, summary and mark for
+                    staff use.
+                  </p>
+                  <button class="btn btn-color-2 project-btn close-modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div class="overlay hidden"></div>
             </div>
           </div>
           <div class="details-container color-container">
@@ -317,11 +342,22 @@
                 GitHub
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linkedin.com/';"
+                class="btn btn-color-2 project-btn show-modal"
+                data-modal="modal2"
               >
                 Details
               </button>
+
+              <div class="modal hidden" id="modal2">
+                <div class="modal-inner">
+                  <h2>Discrete Simulation of Randoms</h2>
+                  <p><br />• Written <br />• Run with dash,</p>
+                  <button class="btn btn-color-2 project-btn close-modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div class="overlay hidden"></div>
             </div>
           </div>
           <div class="details-container color-container">
