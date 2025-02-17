@@ -17,8 +17,8 @@ const openModal = function (modalId) {
   overlay.classList.remove("hidden");
 };
 
-const closeModal = function () {
-  modal.classList.add("hidden");
+const closeModal = function (modalId) {
+  document.querySelector(`#${modalId}`).classList.add("hidden");
   overlay.classList.add("hidden");
 };
 
@@ -29,8 +29,15 @@ btnsOpenModal.forEach((button) => {
   });
 });
 
-for (let i = 0; i < btnsCloseModal.length; i++)
-  btnsCloseModal[i].addEventListener("click", closeModal);
+// for (let i = 0; i < btnsCloseModal.length; i++)
+//   btnsCloseModal[i].addEventListener("click", closeModal);
+
+btnsCloseModal.forEach((button) => {
+  button.addEventListener("click", function () {
+    const modalId = button.dataset.modal; // Fetch the modal ID from the button's data attribute
+    closeModal(modalId);
+  });
+});
 
 overlay.addEventListener("click", closeModal);
 

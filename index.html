@@ -91,7 +91,7 @@
                 alt="Experience icon"
               />
               <h3>Experience</h3>
-              <p>0-1 years<br />Frontend Development</p>
+              <p>0-1 years<br />Full Stack Development</p>
             </div>
             <div class="details-container">
               <img
@@ -137,10 +137,20 @@
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
-        <div class="work_experience">
-          <h2>My work Experience</h2>
-          <h1>• NAB</h1>
-          <p>Summer Intern<br />Nov 2024 - Feb 2025</p>
+        <div class="work_experience_word">
+          <div class="work_experience">
+            <h2>My work Experience</h2>
+            <h1>NAB</h1>
+            <p>Summer Intern - Personal Banking<br />Nov 2024 - Feb 2025</p>
+          </div>
+          <div class="work_experience_details">
+            <p>
+              • Risk Policy Manegement & Evaluation<br />• Maintaining
+              consistency and elimination gaps between front-end & back-end
+              system<br />• Alignment of delivery across mutiple systems,
+              exposures of tools: PowerCurve, Figma
+            </p>
+          </div>
         </div>
         <div class="about-containers">
           <div class="details-container">
@@ -320,13 +330,16 @@
                     <br />• Written in POSIX-compatible Shell, this project aims
                     to duplicate the assignment submit/grade system at UNSW.
                     Provides operational specification by exact reference
-                    implementation towards UNSW system behavior. <br />• Run
+                    implementation towards UNSW system behavior. <br /><br />• Run
                     with dash, in /bin/dash. Provide functions to both student
                     end and staff end, including submit, status, fetch and auto
                     test for student use, adding, removal, summary and mark for
                     staff use.
                   </p>
-                  <button class="btn btn-color-2 project-btn close-modal">
+                  <button
+                    class="btn btn-color-2 project-btn close-modal"
+                    data-modal="modal1"
+                  >
                     Close
                   </button>
                 </div>
@@ -343,7 +356,7 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Discrete Simulation
+              Discrete <br />Event <br />Simulation
             </h2>
             <div class="btn-container">
               <button
@@ -361,9 +374,16 @@
 
               <div class="modal hidden" id="modal2">
                 <div class="modal-inner">
-                  <h2>Discrete Simulation of Randoms</h2>
-                  <p><br />• Written <br />• Run with dash,</p>
-                  <button class="btn btn-color-2 project-btn close-modal">
+                  <h2>Discrete Simulation of Random Events</h2>
+                  <p><br />•	Provide simulation of server’s operation under different designs in Python.
+                    <br />•	Could be used to test and design settings like call center, queuing, hardware ultiliastion, any setting involves server(s) handling incoming task or event.
+                    <br />•	Using matplotlib to plot graph to present system performance and to validate results or patterns, increase system efficiency, lower cost, and increase service rate.
+                    <br />•	Using AMPL tool to calculate system design variables for desire performance.
+                    </p>
+                  <button
+                    class="btn btn-color-2 project-btn close-modal"
+                    data-modal="modal2"
+                  >
                     Close
                   </button>
                 </div>
@@ -390,11 +410,31 @@
                 GitHub
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linkedin.com/';"
+                class="btn btn-color-2 project-btn show-modal"
+                data-modal="modal3"
               >
                 Details
               </button>
+
+              <div class="modal hidden" id="modal3">
+                <div class="modal-inner">
+                  <h2>Providing Realtime Transport Information & Tips</h2>
+                  <p><br />•	Design and implement web server supporting HTTP GET requests, persistent connection and static file serving.
+                    <br />•	Implementation using Flask library, Swagger UI and embedded external API for retrieving real-time transportation information.
+                    <br />•	Maintain local SQLite database to keep track of user’s saved stops.
+                    <br />•	Embedding Gemini API (Google AI tool) to provide extra touring tips for users.
+                    </p>
+                  <button
+                    class="btn btn-color-2 project-btn close-modal"
+                    data-modal="modal3"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+
             </div>
           </div>
         </div>
